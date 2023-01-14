@@ -39,7 +39,7 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'apifernando-cd'
-        images: 'apifernandocd.azurecr.io/apifernando-cd:${{ github.sha }}'
+        images: 'apifernando.azurecr.io/apifernando-cd:${{ github.sha }}'
         slot-name: 'staging'
 
 
