@@ -26,7 +26,7 @@ def read_api():
 
 @app.get("/")
 def read_root ():
-    return {"Hello": "Fernando"}
+    return {"Hello": "Rick"}
 
 
 @app.get("/items/{item_id}")
