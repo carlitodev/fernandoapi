@@ -14,7 +14,6 @@ jobs:
     - name: Checkout GitHub Actions
       uses: actions/checkout@main
 
-
     - name: Login via Azure CLI
       uses: azure/login@v1
       with:
@@ -32,7 +31,7 @@ jobs:
     - name: Build and push container image to registry
       run: |
         docker build . -t apifernando.azurecr.io/apifernando-cd:${{ github.sha }}
-        docker push apifernandocd.azurecr.io/apifernando-cd:${{ github.sha }}
+        docker push apifernando.azurecr.io/apifernando-cd:${{ github.sha }}
         
 
     - name: Deploy to App Service
