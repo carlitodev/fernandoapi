@@ -31,7 +31,7 @@ jobs:
 
     - name: Build and push container image to registry
       run: |
-        docker build . -t apifernandocd.azurecr.io/apifernando-cd:${{ github.sha }}
+        docker build . -t apifernando.azurecr.io/apifernando-cd:${{ github.sha }}
         docker push apifernandocd.azurecr.io/apifernando-cd:${{ github.sha }}
         
 
