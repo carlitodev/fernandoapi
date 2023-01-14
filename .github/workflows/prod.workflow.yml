@@ -37,10 +37,8 @@ jobs:
     - name: Deploy to App Service
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'fernando-api'
+        app-name: 'fernandoapi'
         images: 'apifernando.azurecr.io/apifernando-cd:${{ github.sha }}'
-        slot-name: 'staging'
-
 
     - name: Azure logout
       run: |
